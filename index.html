@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="nav-wrapper">
-        <nav>
+        <nav onscroll="handleScroll">
             <a href="#" class="logo">Eatery Cafe</a>
             <ul class="menu">
                 <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
@@ -148,7 +148,7 @@
                     <input type="text" placeholder="Email address">
                     <input type="text" placeholder="Subject">
                     <textarea name="text" placeholder="Tell obout your project"></textarea>
-                    <input type="submit" value="Send Message">
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
     </div>
@@ -181,3 +181,22 @@
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 </body>
 </html>
+<script>
+
+var navBackground = document.querySelector('nav');
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    // navBackground.classList.add("handleNavScrolled")
+    navBackground.style.width = "100%"
+    navBackground.style.paddingRight="5%"
+    navBackground.style.paddingLeft="5%"
+    navBackground.style.backgroundColor = "#2e2e2e";
+ 
+  } else if(document.body.scrollTop == 0 || document.documentElement.scrollTop == 0){
+    navBackground.style.backgroundColor = "transparent";
+  }
+}
+</script>

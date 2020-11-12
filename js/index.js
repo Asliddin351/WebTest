@@ -40,3 +40,10 @@ $(function(){
 
 });
 
+
+
+function handleScroll () {
+    document.querySelector('nav').addEventListener(onscroll, ()=>{
+        console.log('hi')
+    })
+}
