@@ -7,6 +7,7 @@
 }
 
 body{
+    display: grid;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
@@ -23,21 +24,17 @@ header{
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
-    cursor: e-resize;
 }
-nav{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
-    padding: 35px 0;
+    padding: 35px 75px;
+    width: 100%;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%); 
-    cursor: auto; 
-    z-index: 10;  
-
+    z-index: 9999;  
+    transition: background 0.5s linear;
 }
 
 .container{
@@ -110,7 +107,7 @@ nav .btn:hover{
     background-color: #d01200;
 }
 
-.carousel{
+.controll{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -119,7 +116,7 @@ nav .btn:hover{
     transform: translateY(-50%);
     margin-right: 25px;
 }
-.carousel-item{
+.controll-item{
     margin: 6px 0;
     width: 12px;
     height: 12px;
@@ -128,7 +125,7 @@ nav .btn:hover{
     background: transparent;
     border: 2px solid #fff;
 }
-.carousel-item:hover{
+.controll-item:hover{
     background-color: #ffffff;
 }
 .bg-carousel_fist{
@@ -165,7 +162,7 @@ nav .btn:hover{
     align-items: center;
     width: 1200px;
     margin: 40px auto 50px auto;
-    cursor: e-resize;
+
 }
 .content{
     max-width: 600px;
@@ -388,7 +385,8 @@ nav .btn:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 15%;
-    filter: brightness(0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
     position: relative;
 
 }

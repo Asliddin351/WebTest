@@ -1,6 +1,6 @@
 header {
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .OurMenu_box {
@@ -13,8 +13,8 @@ header {
 }
 
 .Testimonials {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .ContactUs {

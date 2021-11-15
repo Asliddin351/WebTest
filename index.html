@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div class="nav-wrapper">
-        <nav>
+
+        <nav class="navbar">
+
             <a href="#" class="logo">Eatery Cafe</a>
             <ul class="menu">
                 <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
@@ -26,24 +28,25 @@
                 <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
             </ul>
             <div class="callUs">
-                <a href="#">Call Now! <i class="fas fa-phone-alt"></i> <span class="phone"> 010 020 0340</span></a>
-                <a href="#" class="btn">Reserve a table</a>
+                <a href="#"><i class="fas fa-phone-alt"></i> <span class="phone"> 010 020 0340</span></a>
+                <a href="#" class="btn text-white">Reserve a table</a>
             </div>
         </nav>
-    </div>  
+ 
 
     <header id="header"> 
+        <div class="container" style="display: flex;">
+            <div class="header-txt container">
+                <p>Eatery Cafe & Restaurant</p>
+                <h1 class="title">Our mission is to provide an <br> unforgetable experience</h1>
+                <button>Meet out chef</button>
+            </div>
 
-        <div class="header-txt container">
-            <p>Eatery Cafe & Restaurant</p>
-            <h1 class="title">Our mission is to provide an <br> unforgetable experience</h1>
-            <button>Meet out chef</button>
-        </div>
-
-        <div class="carousel">
-            <button class="carousel-item fist"></button>
-            <button class="carousel-item second"></button>
-            <button class="carousel-item three"></button>
+            <div class="controll">
+                <button class="controll-item fist"></button>
+                <button class="controll-item second"></button>
+                <button class="controll-item three"></button>
+            </div>
         </div>
     </header> 
 
@@ -66,7 +69,7 @@
             <div class="card">
                 <div class="card-img c_fist">
                     <img src="images/team-image1.jpg" alt="team">
-                    <div class="card-img__effect_1 ">
+                    <div class="card-img__effect_1">
                         <h2>Lorem ipsum dolor sit amet consectetur FIST</h2>
                         <a href="#" class="sotiol" type="button"></a>
                         <a href="#" class="sotiol" type="button"></a>
